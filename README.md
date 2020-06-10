@@ -1,4 +1,4 @@
-# ursina    ʕ •ᴥ•ʔゝ□
+# Visualization of test driving scenario with ursina
 An easy to use game engine/framework for python.
 
 ![Banner](/docs/made_with_ursina.jpg)
