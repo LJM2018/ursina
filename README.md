@@ -1,7 +1,7 @@
 # Visualization of test driving scenario based on ursina
 Ursina is an easy to use game engine/framework for python. (https://www.ursinaengine.org/)
 
-![Banner](/docs/top8.jpg)
+![Banner](/docs/top8.jpg) image from Mobileyes
 
 
 ## Motivation
@@ -9,13 +9,10 @@ Safe and efficient driving experience is crucial for autonomous vehicles. Althou
 
 ![frommobileyes](/docs/sim8.jpg)
 ## Objectives
-  * Test motion planning algorithm
-  * panda3d
-  * screeninfo, for detecting screen resolution
+  * Test if AV can safely merge into traffic
+  * Test if AV can leverge risk and benefit while picking a faster lane
+  * Test
   * hurry.filesize, for converting bytes to megabytes
-  * pillow, for texture manipulation
-  * psd-tools, for converting .psd files
-  * blender, for converting .blend files
 
 ## Vehicle models
 
@@ -47,8 +44,6 @@ app.run()                       # opens a window and starts the game.
 ## 基于ursina的城市自动驾驶测试场景可视化
 ## 设计动机与思路
 ## 目标
-
 ## 测试项
-
 ## 场景与模型架构
 
