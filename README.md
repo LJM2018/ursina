@@ -1,26 +1,15 @@
-# Visualization of test driving scenario with ursina
-An easy to use game engine/framework for python.
+# Visualization of test driving scenario based on ursina
+Ursina is an easy to use game engine/framework for python. (https://www.ursinaengine.org/)
 
-![Banner](/docs/made_with_ursina.jpg)
-
-
-## Getting Started
-1) Install Python 3.6 or newer
-2) Make sure you have git installed.
-3) Open cmd/terminal and type:
-
-        pip install git+https://github.com/pokepetter/ursina.git
+![Banner](/docs/top8.jpg)
 
 
-If you want to easily edit the source, it's recommended to clone the git repo and install as develop like this:
+## Motivation
+Safe and efficient driving experience is crucial for autonomous vehicles. Although AVs are equipping with more advanced sensors nowadays, autonomous drving remained challenging in urban environments. This is especially true when driving in the intersection with heavy traffic. Most of the time human drivers tend to be aggressive and it requires highly intelligent motion planning algorithm to safely merge into traffic and select a better lane when needed. This visualization construct this common yet challenging scenario with ursina that allows users to test the performance of motion planning algorithm under different traffic speed, gaps between vehicles and the level of aggressiveness of other vehicles. This may help engineers to better balance the 
 
-       git clone https://github.com/pokepetter/ursina.git
-       python setup.py develop
-
-
-
-## Dependencies
-  * python 3.6+
+![frommobileyes](/docs/sim8.jpg)
+## Objectives
+  * Test motion planning algorithm
   * panda3d
   * screeninfo, for detecting screen resolution
   * hurry.filesize, for converting bytes to megabytes
@@ -28,8 +17,10 @@ If you want to easily edit the source, it's recommended to clone the git repo an
   * psd-tools, for converting .psd files
   * blender, for converting .blend files
 
+## Vehicle models
 
-## Examples
+
+## Interactions explained
 ``` python
 from ursina import *            # this will import everything we need from ursina with just one line.
 
@@ -53,34 +44,11 @@ app.run()                       # opens a window and starts the game.
 * [Platformer Game](/samples/platformer.py)
 
 
-## How do I make a game?
-Ursina games are made by writing Python code. You can use any text editor you want, but personally I like to use Atom.
-1) Create an empty .py file called 'ursina_game.py'
-2) Copy this text into your new file:
-``` python
-from ursina import *           # this will import everything we need from ursina with just one line.
+## 基于ursina的城市自动驾驶测试场景可视化
+## 设计动机与思路
+## 目标
 
-app = Ursina()
+## 测试项
 
-player = Entity(
-    model = 'cube' ,           # finds a 3d model by name
-    color = color.orange,
-    scale_y = 2
-    )
+## 场景与模型架构
 
-def update():                  # update gets automatically called by the engine.
-    player.x += held_keys['d'] * .1
-    player.x -= held_keys['a'] * .1
-
-
-app.run()                     # opens a window and starts the game.
-```
-
-3) Type this in the terminal to start the game:
-
-       python ursina_game.py
-   If you use Atom, I recommend installing the package atom-python-run to tun your scripts with the press of a button.
-
-4) You can now move the orange box around with 'a' and 'd'!
-
-   To close the window, you can by default, press shift+q or press the red x. to disable this, write 'window.exit_button.enabled =   False' somewhere in your code.
