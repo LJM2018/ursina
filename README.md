@@ -18,6 +18,7 @@ Safe and efficient driving experience is crucial for autonomous vehicles. Althou
 To simplify the situaltion, we will use two combined cubes entity in ursina to represent a car
 
 ## Interactions explained
+![twocubes](/docs/scenario.png) (image from ursina)
   * Increase speed of other vehicles
   * Decrease speed of other vehicles
   * Stop/Move the right lane traffic (the one AV originally drive in)
