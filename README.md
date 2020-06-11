@@ -2,7 +2,7 @@
 Ursina is an easy to use game engine/framework for python. (https://www.ursinaengine.org/)
 # 基于ursina的城市自动驾驶测试场景可视化
 Ursina 是一款使用python语言的易用游戏引擎 (https://www.ursinaengine.org/)
-![Banner](/docs/top8.jpg)   (image from Mobileyes)
+![Banner](/docs/top8.jpg)   ->(image from Mobileyes)<-
 
 
 ## Motivation
@@ -12,7 +12,7 @@ Safe and efficient driving experience is crucial for autonomous vehicles. Althou
 安全快捷的驾驶体验一直是自动驾驶汽车研究的重中之重。虽然现今的智能汽车都装备了更先进的传感器，在城镇环境下的自动驾驶仍具挑战性，尤其是是在十字路口以及车流密集的环境。在该环境下，大多数人类驾驶员的驾驶行为趋向侵略性。而这也要求运动规划算法足够智能来帮助汽车安全地汇入车流，并在需要时选择一条更快捷的车道。该可视化系统使用ursina来重建这种常见但是具有挑战性的场景，允许用户调整不同车流速度、车与车之间的间隙以及不同驾驶风格来测试其运动规划算法的表现。这可以帮助工程师更好的平衡算法的风格以适应不同的状况。
 
 ![frommobileyes](/docs/sim8.jpg)   
-(image from Mobileyes)
+->(image from Mobileyes)<-
 
 ## Assumptions & Objectives
 Assuming that the ego vehicle knows every parameter in the simulation(speed and gaps of other cars)
@@ -26,9 +26,9 @@ Assuming that the ego vehicle knows every parameter in the simulation(speed and 
 
 ## Vehicle models
 ## 车辆模型
-![twocubes](/docs/car1.jpg) (Image from ursina)<br/>
-To simplify the situaltion, we will use two combined cubes entity in ursina to represent a car
+![twocubes](/docs/car1.jpg) ->(Image from ursina)<-<br/>
 
+To simplify the situaltion, we will use two combined cubes entity in ursina to represent a car
 为了简化场景，我们可以使用两个ursinane自带的正方体来表示车辆
 
 ## Interactions explained
