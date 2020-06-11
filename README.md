@@ -27,6 +27,7 @@ Assuming that the ego vehicle knows every parameter in the simulation(speed and 
 ## 车辆模型
 ![twocubes](/docs/car1.jpg) (image from ursina)
 To simplify the situaltion, we will use two combined cubes entity in ursina to represent a car
+
 为了简化场景，我们可以使用两个ursinane自带的正方体来表示车辆
 
 ## Interactions explained
@@ -46,3 +47,12 @@ After selecting the lane (inside the blue box)that modifications applied to(if n
   3) 停止/移动 选择的车道线的车流
   4) 增加车流中车辆的间距（安全距离）
   5) 减少车流中车辆的间距（安全距离）
+
+## Test cases
+## 测试用例
+  1) If the traffic is ok in lane 2 and no incoming cars from the left, the ego car is expected to maintain its lane and turn right as normal
+  1) 如果车道2车辆较少并且左方无车辆正在汇入，被测试车辆应该保持其原先的车道并正常右转
+  ![handdrew](/docs/test1.jpg)
+  2) If there are cars coming from left to merge and there lane 2 is blocked by slow traffic, while traffic in lane 1 is moving faster, the ego car is expected to slowly push so that it can merge into traffic and change its lane to lane 1.
+  2) 如果左方有车辆汇入，车道2车流行驶缓慢而车道1的车流行驶较快，被测试车辆应缓慢推进直至汇入左边车流并转进车道1
+  ![handdrew](/docs/test2.jpg)
