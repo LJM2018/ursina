@@ -2,7 +2,7 @@
 Ursina is an easy to use game engine/framework for python. (https://www.ursinaengine.org/)
 # 基于ursina的城市自动驾驶测试场景可视化
 Ursina 是一款使用python语言的易用游戏引擎 (https://www.ursinaengine.org/)
-![Banner](/docs/top8.jpg) (image from Mobileyes)
+![Banner](/docs/top8.jpg) -------------------------------(image from Mobileyes)
 
 
 ## Motivation
