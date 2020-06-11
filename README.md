@@ -13,28 +13,36 @@ Safe and efficient driving experience is crucial for autonomous vehicles. Althou
 
 ![frommobileyes](/docs/sim8.jpg) (image from Mobileyes)
 
-## Objectives
+## Assumptions & Objectives
+Assuming that the ego vehicle knows every parameter in the simulation(speed and gaps of other cars)
   * Test if AV can safely and efficiently merge into traffic
   * Test if AV can leverge risk and benefit while picking a better lane
-  * Test if AV can navigate safely when pedestrian cross the street
 
-## 测试目标
+## 假定情况与测试目标
+假定被测试的车辆知道所有模拟中的参数（其他车辆的速度与间距）
   * 测试自动驾驶汽车是否能安全有效率地汇入车流
   * 测试自动驾驶汽车是否在原车道堵塞或者缓慢时能权衡利弊做出合适的选择
-  * Test if AV can navigate safely when pedestrian cross the street
 
 ## Vehicle models
+## 车辆模型
 ![twocubes](/docs/car1.jpg) (image from ursina)
 To simplify the situaltion, we will use two combined cubes entity in ursina to represent a car
+为了简化场景，我们可以使用两个ursinane自带的正方体来表示车辆
 
 ## Interactions explained
-![handdrew](/docs/scenario.jpg)
-  * Increase speed of other vehicles
-  * Decrease speed of other vehicles
-  * Stop/Move the right lane traffic (the one AV originally drive in)
-  * Increase the gap between other vehicles
-  * Decrease the gap between other vehicles
+## 交互逻辑
+![handdrew](/docs/scenario3.jpg)
 
+After selecting the lane (inside the blue box)that modifications applied to(if no lane selected, changes apply to all), users can change the following settings by clicking:
+  1) Increase speed of other vehicles
+  2) Decrease speed of other vehicles
+  3) Increase the gap between other vehicles
+  4) Decrease the gap between other vehicles
+  5) Stop/Move the selected lane's traffic
 
-## 场景与模型架构
-
+在选择相应的车道后(蓝色框)，所有的改变将应用到该路线上的车辆(如果没有选择，改变会应用于所有车辆)，用户可以通过点击按钮改变以下参数:
+  1) 提高车流速度
+  2) 降低车流速度
+  3) 停止/移动 选择的车道线的车流
+  4) 增加车流中车辆的间距（安全距离）
+  5) 减少车流中车辆的间距（安全距离）
