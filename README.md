@@ -11,7 +11,8 @@ Safe and efficient driving experience is crucial for autonomous vehicles. Althou
 ## 设计动机与思路
 安全快捷的驾驶体验一直是自动驾驶汽车研究的重中之重。虽然现今的智能汽车都装备了更先进的传感器，在城镇环境下的自动驾驶仍具挑战性，尤其是是在十字路口以及车流密集的环境。在该环境下，大多数人类驾驶员的驾驶行为趋向侵略性。而这也要求运动规划算法足够智能来帮助汽车安全地汇入车流，并在需要时选择一条更快捷的车道。该可视化系统使用ursina来重建这种常见但是具有挑战性的场景，允许用户调整不同车流速度、车与车之间的间隙以及不同驾驶风格来测试其运动规划算法的表现。这可以帮助工程师更好的平衡算法的风格以适应不同的状况。
 
-![frommobileyes](/docs/sim8.jpg)   (image from Mobileyes)
+![frommobileyes](/docs/sim8.jpg)   
+(image from Mobileyes)
 
 ## Assumptions & Objectives
 Assuming that the ego vehicle knows every parameter in the simulation(speed and gaps of other cars)
@@ -51,11 +52,9 @@ After selecting the lane (inside the blue box)that modifications applied to(if n
 ## Test cases
 ## 测试用例
   1) If the traffic is ok in lane 2 and no incoming cars from the left, the ego car is expected to maintain its lane and turn right as normal
-  
   如果车道2车辆较少并且左方无车辆正在汇入，被测试车辆应该保持其原先的车道并正常右转
   ![handdrew](/docs/test1.jpg)
 
   2) If there are cars coming from left to merge and there lane 2 is blocked by slow traffic, while traffic in lane 1 is moving faster, the ego car is expected to slowly push so that it can merge into traffic and change its lane to lane 1.
-  
   如果左方有车辆汇入，车道2车流行驶缓慢而车道1的车流行驶较快，被测试车辆应缓慢推进直至汇入左边车流并转进车道1
   ![handdrew](/docs/test2.jpg)
